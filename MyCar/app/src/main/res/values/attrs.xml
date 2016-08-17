@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="addSubView">
+        <attr name="add_background" format="reference" />
+        <attr name="add_max_background" format="reference" />
+        <attr name="sub_min_background" format="reference" />
+        <attr name="sub_background" format="reference" />
+        <attr name="add_textColor" format="reference|color" />
+        <attr name="add_max_textColor" format="reference|color" />
+        <attr name="sub_min_textColor" format="reference|color" />
+        <attr name="sub_textColor" format="reference|color" />
+        <attr name="text_background" format="reference" />
+         <attr name="text_textColor" format="reference|color" />
+        <attr name="min_value" format="integer" />
+        <attr name="max_value" format="integer" />
+        <attr name="initial_value" format="integer" />
+        <attr name="textSize" format="dimension" />
+    </declare-styleable>
+<declare-styleable name="CircleFlowIndicator">
+        <attr name="activeColor" format="color" />
+        <attr name="inactiveColor" format="color" />
+        <attr name="radius" format="dimension" />
+		<attr name="centered" format="boolean" />
+		<attr name="fadeOut" format="integer" />
+		<attr name="inactiveType">
+			<flag name="stroke" value="0" />
+			<flag name="fill" value="1" />
+		</attr>
+		<attr name="activeType">
+			<flag name="stroke" value="0" />
+			<flag name="fill" value="1" />
+		</attr>
+		<attr name="circleSeparation" format="dimension" />
+		<attr name="activeRadius" format="dimension" />
+    </declare-styleable>   
+    <declare-styleable name="ViewFlow">
+        <attr name="sidebuffer" format="integer" />
+    </declare-styleable>
+    
+      <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+</resources>

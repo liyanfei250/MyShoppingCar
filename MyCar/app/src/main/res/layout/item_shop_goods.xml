@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/y10"
+    android:clickable="true"
+    android:paddingBottom="@dimen/y5"
+    android:paddingLeft="@dimen/x24"
+    android:paddingRight="@dimen/x24"
+    android:paddingTop="@dimen/y16">
+
+    <ImageView
+        android:id="@+id/iv_course"
+        android:layout_width="@dimen/x178"
+        android:layout_height="@dimen/y125"
+        android:background="@color/gray_lighter3"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:id="@+id/ll_course_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x18"
+        android:layout_marginTop="@dimen/x5"
+        android:layout_toRightOf="@id/iv_course"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_course_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:text="素描基础-比例与分割(主讲人:岳忠怡)" />
+
+        <TextView
+            android:id="@+id/tv_course_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x15"
+            android:text="￥ 8.8"
+            android:textColor="#e03636"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_right_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x20"
+            android:scaleType="fitXY" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_teacher_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_course_name"
+        android:layout_marginLeft="@dimen/x18"
+        android:layout_marginTop="@dimen/x5"
+        android:layout_toRightOf="@id/iv_course"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="价格:"
+            android:textSize="@dimen/y24" />
+
+        <TextView
+            android:id="@+id/tv_phone_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x15"
+            android:text="4000"
+            android:textSize="@dimen/y24" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_study_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_teacher_desc"
+        android:layout_marginBottom="@dimen/y15"
+        android:layout_marginLeft="@dimen/x18"
+        android:layout_marginTop="@dimen/y15"
+        android:layout_toRightOf="@+id/iv_course"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_red_clock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/tv_course_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x10"
+            android:includeFontPadding="false"
+            android:text="45:00/ 共4节"
+            android:textColor="@color/red"
+            android:textSize="@dimen/y20" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:background="@color/home_tag_red"
+        android:clickable="true"
+        android:paddingBottom="@dimen/y10"
+        android:paddingLeft="@dimen/x20"
+        android:paddingRight="@dimen/x20"
+        android:paddingTop="@dimen/y10"
+        android:text="添加"
+        android:textColor="@color/white"
+        android:textSize="@dimen/y30" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y10"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray_lighter"
+        android:visibility="gone" />
+</RelativeLayout>
+
